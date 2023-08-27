@@ -5,8 +5,6 @@ It is used when we need to traverse the list in both directions, such as impleme
 
 However, they come with the expense of increased memory usage due to the extra 'previous' references.  
 
-## Code Structure
-
 ## Methods
 - push(value): The method takes value to add as a parameter and assigns it as the tail of the list.
 - pop(): The method removes the tail of the list.
