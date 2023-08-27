@@ -80,6 +80,23 @@ class DoublyLinkedList {
     this.head.prev = newNode;
     this.head = newNode;
   }
+
+  get(index) {
+    if (index < 0 || index >= this.length) {
+      return null;
+    }
+    if (index === 0) {
+      return this.head.value;
+    }
+    if (index === this.length - 1) {
+      return this.tail.value;
+    }
+    let current = this.head;
+    for (let i = 0; i < index; i++) {
+      current = current.next;
+    }
+    return current.value;
+  }
 }
 
 module.exports = DoublyLinkedList;

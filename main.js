@@ -26,3 +26,5 @@ doublyList.traverse();
 doublyList.unShift(1);
 
 doublyList.traverse();
+
+console.log(doublyList.get(-1),doublyList.get(0),doublyList.get(2),doublyList.get(doublyList.length-1),doublyList.get(20));
