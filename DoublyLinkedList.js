@@ -53,6 +53,33 @@ class DoublyLinkedList {
     this.length--;
     return tmp;
   }
+
+  shift() {
+    if (this.isEmpty()) {
+      return null;
+    }
+    const tmp = this.head.value;
+    if (this.length === 1) {
+      this.head = null;
+      this.tail = null;
+      this.length = 0;
+      return tmp;
+    }
+
+    this.head = this.head.next;
+    return tmp;
+  }
+
+  unShift(value) {
+    const newNode = new listNode(value);
+    if (this.isEmpty()) {
+      this.head = newNode;
+      this.tail = newNode;
+    }
+    newNode.next = this.head;
+    this.head.prev = newNode;
+    this.head = newNode;
+  }
 }
 
 module.exports = DoublyLinkedList;
