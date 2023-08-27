@@ -1,0 +1,13 @@
+{
+  "name": "doublylinkedlist-js",
+  "version": "1.0.0",
+  "description": "A doubly Linked List is a data structure used in programming to organize a collection of nodes in a linear order. Where each double-linked list node contains two references to both the next and previous nodes in the list.",
+  "main": "main.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
