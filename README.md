@@ -1,5 +1,9 @@
 # DoublyLinkedList-JS
-Doubly Linked List implementation in JavaScript  
+A doubly Linked List is a data structure used in programming to organize a collection of nodes in a linear order. Where each double-linked list node contains two references to both the next and previous nodes in the list.  
+
+It is used when we need to traverse the list in both directions, such as implementing features like undo/redo functionality or moving both forward and backward in a text editor.   
+
+However, they come with the expense of increased memory usage due to the extra 'previous' references.  
 
 ## Code Structure
 
