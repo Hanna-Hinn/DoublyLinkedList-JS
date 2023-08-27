@@ -97,6 +97,26 @@ class DoublyLinkedList {
     }
     return current.value;
   }
+
+  set(index, value) {
+    if (index < 0 || index >= this.length) {
+      return null;
+    }
+    if (index === 0) {
+      this.head.value = value;
+      return;
+    }
+    if (index === this.length - 1) {
+      this.tail.value = value;
+      return;
+    }
+    let current = this.head;
+    for (let i = 0; i < index; i++) {
+      current = current.next;
+    }
+    current.value = value;
+    return;
+  }
 }
 
 module.exports = DoublyLinkedList;
