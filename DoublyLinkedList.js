@@ -137,6 +137,26 @@ class DoublyLinkedList {
     current.prev = newNode;
     return true;
   }
+
+  remove(index) {
+    if (index < 0 || index >= this.length) {
+      return null;
+    }
+    if (index === 0) {
+      return this.shift();
+    }
+    if (index === this.length - 1) {
+      return this.pop();
+    }
+    let current = this.head;
+    for (let i = 0; i < index; i++) {
+      current = current.next;
+    }
+    const tmp = current.value;
+    current.prev.next = current.next;
+    current.next.prev = current.prev;
+    return tmp;
+  }
 }
 
 module.exports = DoublyLinkedList;

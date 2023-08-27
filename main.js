@@ -37,12 +37,18 @@ doublyList.traverse();
 
 // doublyList.traverse();
 
-console.log(
-  doublyList.insert(-1, 6),
-  doublyList.insert(0, 10),
-  doublyList.insert(2, 30),
-  doublyList.insert(4, 50),
-  doublyList.insert(100, "Hello world!"),
-);
+// console.log(
+//   doublyList.insert(-1, 6),
+//   doublyList.insert(0, 10),
+//   doublyList.insert(2, 30),
+//   doublyList.insert(4, 50),
+//   doublyList.insert(100, "Hello world!"),
+// );
+
+doublyList.remove(4);
+doublyList.remove(3);
+doublyList.remove(2);
+doublyList.remove(1);
+doublyList.remove(0);
 
 doublyList.traverse();
